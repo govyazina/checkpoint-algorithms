@@ -1,0 +1,27 @@
+{
+  "name": "checkpoint-algorithms",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/natashamarkis/checkpoint-algorithms.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/natashamarkis/checkpoint-algorithms/issues"
+  },
+  "homepage": "https://github.com/natashamarkis/checkpoint-algorithms#readme",
+  "devDependencies": {
+    "eslint": "^7.10.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jest": "^26.0.0",
+    "jest": "^27.4.7"
+  }
+}

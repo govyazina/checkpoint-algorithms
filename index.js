@@ -18,12 +18,13 @@ function crawlTree(arr) {
 
 // Код для второго задания напиши в этой функции
 function twoSum(arr, target) {
+    const hash = {}
     for (let i = 0; i < arr.length; i++) {
-        for (let j = i + 1; j < arr.length; j++) {
-            if (target - arr[i] === arr[j]) {
-                return [i, j]
-            }
+        const foundNum = hash[target - arr[i]];
+        if (foundNum !== undefined ) {
+                return [foundNum, i]
         }
+        hash[arr[i]] = i
     }
     return -1
 }

@@ -19,14 +19,19 @@ function crawlTree(arr) {
 // Код для второго задания напиши в этой функции
 function twoSum(arr, target) {
     const hash = {}
-    for (let i = 0; i < arr.length; i++) {
-        const foundNum = hash[target - arr[i]];
+    const findRec = (i) => {
+        const foundNum = hash[target - arr[i]]
+        if (i === arr.length) {
+            return -1
+        }
         if (foundNum !== undefined ) {
-                return [foundNum, i]
+            return [foundNum, i]
         }
         hash[arr[i]] = i
+        return findRec(i + 1)
+
     }
-    return -1
+    return findRec(0)
 }
 
 // Всё, что ниже, нужно для тестов. Не изменяй этот код
